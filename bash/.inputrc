@@ -1,2 +1,4 @@
 # set terminal editing-mode vi
- set terminal editing-mode vi
+set terminal editing-mode vi
+# Un commento for linux
+#set editing-mode vi

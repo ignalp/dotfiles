@@ -8,7 +8,7 @@
 # Don't link DS_Store files 
 find . -name ".DS_Store" -exec rm{} \;
 
-PROGRAMS=(alias bash env git python scripts tmux vim)
+PROGRAMS=(alias bash env git tmux vim)
 OLD_DOTFILES="dotfile_bk_$(date -u +"%Y%m%d%H%M%S")"
 mkdir $OLD_DOTFILES
 
@@ -26,6 +26,8 @@ function backup_if_exists(){
 # Clean conflicts 
 
 backup_if_exists ~/.bash_profile
+backup_if_exists ~/.inputrc
+backup_if_exists ~/.profile
 backup_if_exists ~/.bashrc
 backup_if_exists ~/.gitconfig
 backup_if_exists ~/.tmux.conf
