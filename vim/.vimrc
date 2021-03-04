@@ -55,8 +55,15 @@ set splitright
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>
+nnoremap <C-l> <C-w>l
 set laststatus=2        " Show the status line at the bottom
+
+" quicker window movement in terminal			      
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+tnoremap <C-w>h <C-\><C-n><C-w>j
+tnoremap <C-w>j <C-\><C-n><C-w>k
+tnoremap <C-w>k <C-\><C-n><C-w>h
+tnoremap <C-w>l <C-\><C-n><C-w>l
 
 " Custom Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
